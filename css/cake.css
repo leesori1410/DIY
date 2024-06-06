@@ -1,0 +1,51 @@
+body {
+    padding-top: 6rem; /* 네비게이션 바의 높이만큼 padding-top 추가 */
+}
+
+.button-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.button {
+    width: 144px;
+    height: 41px;
+    border-radius: 20px;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    font-size: 1rem;
+    border-style: none;
+}
+
+#color {
+    background-color: #FFEB8C;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+}
+
+
+
+.cake-item {
+    width: 291px;
+    height: 415px;
+    background-color: #FFEB8C;
+    border-radius: 36px;
+}
+
+.cake-item > img {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.cake-item > p {
+    margin-left: 1.7rem;
+}
+
+.first-text {
+    margin-bottom: 2rem;
+}
