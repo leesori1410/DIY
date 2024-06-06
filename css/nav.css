@@ -12,6 +12,7 @@ body>header {
     background-color: white;
     flex-direction: column;
     height: 45px;
+    position: fixed;
 }
 
 .nav {
@@ -19,6 +20,7 @@ body>header {
     display: flex;
     justify-content: space-between; /* 메인축(가로)으로 양쪽정렬 */
     align-items: center;
+    
 }
 
 .nav-list {
