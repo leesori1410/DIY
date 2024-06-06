@@ -1,0 +1,23 @@
+.start {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 253, 248);
+    /* transform: translate(0, 100%); */
+    animation-name: up;
+    animation-duration: 5s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@keyframes up {
+    100% {bottom: 0px;}
+}
