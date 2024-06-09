@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 253, 248);
-    transition: transform 3s cubic-bezier(0.55, 0.055, 0.675, 0.19); 
+    transition: transform 3.5s cubic-bezier(0.55, 0.055, 0.675, 0.19); 
 }
     
 .img-container {
@@ -30,11 +30,10 @@
 }
 
 .start.up {
-    transform: translateY(-100%); /* 위로 이동 */
+    transform: translateY(-130%); /* 위로 이동 */
   }
 
 .content {
     display: flex;
     flex-direction: column;
-
 }
