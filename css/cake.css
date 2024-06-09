@@ -24,7 +24,7 @@ body {
 
 section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 8rem;
 }
 
@@ -35,11 +35,22 @@ section {
     height: 415px;
     background-color: #FFEB8C;
     border-radius: 36px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
 }
 
-.cake-item > img {
-    margin: 10px;
+.cakeF {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 36px;
+}
+
+.cake-item > div {
     max-width: 100%;
+    
 }
 
 .cake-item > p {
