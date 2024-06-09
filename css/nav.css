@@ -87,25 +87,29 @@ header:hover + .nav-spread,
     background-color: white;
 }
 
+.mobile-container {
+    border-bottom: 2px solid rgb(255, 235, 140);
+}
+
 .bi-chevron-down {
     margin: 0 10px;
 }
 
 .mobile-item {
     display: flex;
-    justify-content: flex-end;
-    border-bottom: 1.5px solid rgb(255, 235, 140);
+    justify-content: space-between;
     height: 35px;
     align-items: center;
+    background-color: white;
+    padding-left: 10px;
 }
-
+    
 .mobile-items {
     display: flex;
-    justify-content: flex-end;
     height: 30px;
     align-items: center;
-    padding-right: 36px;
-    border-bottom: 1.5px solid rgb(255, 235, 140);
+    padding-left: 25px;
+    background-color: #fff7ea;
 }
 
 .container {
