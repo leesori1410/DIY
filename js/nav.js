@@ -26,23 +26,33 @@ const toggleItems = () => {
     // 악세사리
     const containerDiv0 = document.getElementsByClassName("container")[0];
     const mobileItem0 = document.getElementsByClassName("mobile-item")[0];
+    const mobileToggleI0 = mobileItem0.getElementsByTagName("i")[0];
     
     // 케이크
     const containerDiv1 = document.getElementsByClassName("container")[1];
     const mobileItem1 = document.getElementsByClassName("mobile-item")[1];
-
+    const mobileToggleI1 = mobileItem1.getElementsByTagName("i")[1];
+    
     // 간식
     const containerDiv2 = document.getElementsByClassName("container")[2];
     const mobileItem2 = document.getElementsByClassName("mobile-item")[2];
+    const mobileToggleI2 = mobileItem2.getElementsByTagName("i")[2];
 
     mobileItem0.onclick = () => {
         containerDiv0.classList.toggle("show-mobile");
+        mobileToggleI0.classList.toggle("bi-chevron-down");
+        mobileToggleI0.classList.toggle("bi-chevron-up");
     }
     mobileItem1.onclick = () => {
         containerDiv1.classList.toggle("show-mobile");
+        mobileToggleI1.classList.toggle("bi-chevron-down");
+        mobileToggleI1.classList.toggle("bi-chevron-up");
     }
     mobileItem2.onclick = () => {
         containerDiv2.classList.toggle("show-mobile");
+        mobileToggleI2.classList.toggle("bi-chevron-down");
+        mobileToggleI2.classList.toggle("bi-chevron-up");
     }
+
 }
 toggleItems();

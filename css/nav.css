@@ -42,6 +42,9 @@ body>header {
     display: none;
 }
 
+.bi-list {
+    font-size: 20px;
+}
 
 .nav-spread {
     display: none;
@@ -59,7 +62,7 @@ header:hover + .nav-spread,
     align-items: center;
     position: absolute;
     z-index: 100;
-    background-color: rgb(255, 242, 210);
+    background-color: white;
   }
 
 .item {
@@ -127,6 +130,8 @@ header:hover + .nav-spread,
     .show-mobile {
         display: flex;
     }
+    .bi-chevron-up{
+        margin: 0 10px;
+    }
 }
-
 
