@@ -31,12 +31,12 @@ const toggleItems = () => {
     // 케이크
     const containerDiv1 = document.getElementsByClassName("container")[1];
     const mobileItem1 = document.getElementsByClassName("mobile-item")[1];
-    const mobileToggleI1 = mobileItem1.getElementsByTagName("i")[1];
+    const mobileToggleI1 = mobileItem1.getElementsByTagName("i")[0];
     
     // 간식
     const containerDiv2 = document.getElementsByClassName("container")[2];
     const mobileItem2 = document.getElementsByClassName("mobile-item")[2];
-    const mobileToggleI2 = mobileItem2.getElementsByTagName("i")[2];
+    const mobileToggleI2 = mobileItem2.getElementsByTagName("i")[0];
     
     mobileItem0.onclick = () => {
         containerDiv0.classList.toggle("show-mobile");
