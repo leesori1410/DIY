@@ -37,7 +37,7 @@ const toggleItems = () => {
     const containerDiv2 = document.getElementsByClassName("container")[2];
     const mobileItem2 = document.getElementsByClassName("mobile-item")[2];
     const mobileToggleI2 = mobileItem2.getElementsByTagName("i")[2];
-
+    
     mobileItem0.onclick = () => {
         containerDiv0.classList.toggle("show-mobile");
         mobileToggleI0.classList.toggle("bi-chevron-down");
@@ -53,6 +53,5 @@ const toggleItems = () => {
         mobileToggleI2.classList.toggle("bi-chevron-down");
         mobileToggleI2.classList.toggle("bi-chevron-up");
     }
-
 }
 toggleItems();
