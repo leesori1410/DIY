@@ -60,3 +60,31 @@ section {
 .first-text {
     margin-bottom: 2rem;
 }
+
+/* 1133px 이하에서의 레이아웃 변경 */
+@media screen and (max-width: 1133px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 두 개의 동일한 너비의 열을 생성합니다. */
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+    .cake-item {
+        margin: auto; /* 그리드 아이템을 가운데로 정렬합니다. */
+    }
+}
+
+/* 600px 이하에서의 레이아웃 변경 */
+@media screen and (max-width: 600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-section {
+        display: flex;
+        flex-direction: row; /* 버튼을 수평으로 정렬합니다. */
+        justify-content: center;
+    }
+}
+

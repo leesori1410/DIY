@@ -12,8 +12,11 @@ body>header {
     flex-direction: column;
     height: 45px;
     z-index: 100;
+    
 }
-
+a {
+    color: #000;
+}
 .nav {
     width: 100%;
     display: flex;
