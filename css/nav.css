@@ -53,15 +53,15 @@ body>header {
 /* header와 .nav-spread에 마우스를 올렸을 때 .nav-spread의 css를 변화 */
 header:hover + .nav-spread, 
 .nav-spread:hover  {
-    margin-top: 45px;
+    position: absolute;
+    z-index: 100;
+    top: 45px;
     padding: 0;
     width: 100%;
     height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 100;
     background-color: white;
   }
 
