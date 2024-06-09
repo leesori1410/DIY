@@ -2,7 +2,7 @@ body>header {
     padding: 6px 20px;
     margin: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     border-bottom: 3px solid rgb(255, 235, 140);
     top: 0;
     right: 0;
