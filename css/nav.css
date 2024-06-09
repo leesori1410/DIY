@@ -2,7 +2,6 @@ body>header {
     padding: 6px 20px;
     margin: 0;
     width: 100%;
-    position: fixed;
     border-bottom: 3px solid rgb(255, 235, 140);
     top: 0;
     right: 0;
@@ -12,7 +11,7 @@ body>header {
     background-color: white;
     flex-direction: column;
     height: 45px;
-    position: fixed;
+    z-index: 100;
 }
 
 .nav {
@@ -53,7 +52,7 @@ body>header {
 /* header와 .nav-spread에 마우스를 올렸을 때 .nav-spread의 css를 변화 */
 header:hover + .nav-spread, 
 .nav-spread:hover  {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 45px;
     padding: 0;
