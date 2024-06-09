@@ -7,11 +7,22 @@
     <link rel="shortcut icon" href="../image/logo.png">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/start.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
+    <div class="start">
+        <div class="img-container"><img src="../image/left.png" alt="" class="start-img"></div>
+        <div class="content">
+            <span>D 당신의</span>
+            <span>I&nbsp;&nbsp;옆 반려견은</span>
+            <span>Y 행복한가요</span>
+        </div>
+        <div class="img-container right"><img src="../image/right.png" alt="" class="start-img right-img" style="visibility: hidden;"><i class="bi bi-arrow-down-short"></i><img src="../image/right.png" alt="" class="start-img right-img"></div>
+    </div>
+    
     <header>
         <nav class="nav">
             <!-- 로고 -->
@@ -35,6 +46,48 @@
             </div>
         </nav>
     </header>
+
+    <nav class="nav-spread">
+        <div class="item">
+            <span class="items">악세사리</span>
+            <span class="items">턱받이</span>
+            <span class="items">목걸이</span>
+        </div>
+        <div class="item">
+            <span class="items">케이크</span>
+            <span class="items">당근케이크</span>
+            <span class="items">고구마케이크</span>
+        </div>
+        <div class="item">
+            <span class="items">간식</span>
+            <span class="items">쿠키</span>
+            <span class="items">개껌</span>
+        </div>
+    </nav>
+
+    <nav class="nav-mobile">
+        <div class="mobile-container">
+            <div class="mobile-item">악세사리<i class="bi bi-chevron-down mobile-toggle"></i></div>
+            <div class="container">
+                <div class="mobile-items">턱받이</div>
+                <div class="mobile-items">목걸이</div>
+            </div>
+        </div>
+        <div class="mobile-container">
+            <div class="mobile-item">케이크<i class="bi bi-chevron-down mobile-toggle"></i></div>
+            <div class="container">
+                <div class="mobile-items"><a href="../html/cake.html">당근케이크</a></div>
+                <div class="mobile-items">고구마케이크</div>       
+            </div>
+        </div>
+        <div class="mobile-container">
+            <div class="mobile-item">간식<i class="bi bi-chevron-down mobile-toggle"></i></div>
+            <div class="container">
+                <div class="mobile-items">쿠키</div>
+                <div class="mobile-items">개껌</div>    
+            </div>
+        </div>
+    </nav>
     
     <section class="scene one">
         <header>
@@ -78,5 +131,7 @@
         </div>
     </footer>
     
+    <script src="../js/nav.js"></script>
+    <script src="../js/start.js"></script>
 </body>
 </html>
