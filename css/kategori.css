@@ -65,12 +65,17 @@
 }
 
 @media screen and (max-width: 870px) {
+    .goods-container {
+        display: flex;
+        justify-content: center;
+    }
     .goods {
         width: 240px;
         height: 330px;
         margin: 15px 25px;
         border-radius: 36px;
         margin-bottom: 60px;
+        
     }
     .goods-img {
         width: 220px;
