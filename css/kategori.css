@@ -24,9 +24,13 @@
     margin-right: 150px;
 }
 
+.goods-name2 {
+    background-color: #e8e6e6;
+}
+
 .goods-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1000px;
 }
@@ -35,7 +39,7 @@
     display: flex;
     flex-direction: column;
     width: 220px;
-    height: 300px;
+    height: 345px;
     background-color: rgb(255, 235, 140);
     margin: 15px 30px;
     border-radius: 36px;
@@ -49,7 +53,7 @@
 }
 
 .name , .hashtags {
-    margin-left: 25px;
+    margin-left: 17px;
 }
 
 .name {
@@ -63,7 +67,7 @@
 @media screen and (max-width: 870px) {
     .goods {
         width: 240px;
-        height: 280px;
+        height: 330px;
         margin: 15px 25px;
         border-radius: 36px;
         margin-bottom: 60px;
