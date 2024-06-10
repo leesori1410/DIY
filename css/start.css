@@ -12,7 +12,7 @@
 }
 
 .content span {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .right {
@@ -27,6 +27,7 @@
 
 .bi-arrow-down-short {
     font-size: 30px;
+    margin: 15px;
 }
 
 .start.up {
