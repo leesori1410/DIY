@@ -18,15 +18,16 @@
     padding: 10px 20px;
     margin-top: 4rem;
     border-radius: 40px;
-    background-color: rgb(255, 235, 140);
+    
 }
 
 .goods-name1 {
     margin-right: 150px;
+    background-color: #e8e6e6;
 }
 
 .goods-name2 {
-    background-color: #e8e6e6;
+    background-color: rgb(255, 235, 140);
 }
 
 .goods-container {
