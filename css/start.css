@@ -10,9 +10,9 @@
     background-color: rgb(255, 253, 248);
     transition: transform 3.5s cubic-bezier(0.55, 0.055, 0.675, 0.19); 
 }
-    
-.img-container {
-    width: 100%;
+
+.content span {
+    font-size: 20px;
 }
 
 .right {
@@ -22,7 +22,7 @@
 }
         
 .start-img {
-    width: 40%;
+    width: 30%;
 }
 
 .bi-arrow-down-short {
