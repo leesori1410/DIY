@@ -16,6 +16,7 @@
 
 .goods-name {
     padding: 10px 20px;
+    margin-top: 4rem;
     border-radius: 40px;
     background-color: rgb(255, 235, 140);
 }
@@ -31,6 +32,7 @@
 .goods-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     max-width: 1000px;
 }
@@ -47,7 +49,7 @@
 }
 
 .goods-img {
-    width: 200px;
+    width: 220px;
     height: 150px;
     padding: 10px;
 }
@@ -78,7 +80,7 @@
         
     }
     .goods-img {
-        width: 220px;
+        width: 240px;
     }
     .goods-name1 {
         margin-right: 15%;
