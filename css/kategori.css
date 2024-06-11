@@ -53,6 +53,7 @@
     width: 220px;
     height: 150px;
     padding: 10px;
+    border-radius: 36px;
 }
 
 .name , .hashtags {
