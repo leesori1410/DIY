@@ -11,7 +11,7 @@ footer > div {
     margin-top: 2.8rem;
 }
 
-div > ul > li {
+.footer-ul > li {
     list-style: none;
     font-size: 1rem;
 }
