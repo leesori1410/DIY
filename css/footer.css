@@ -15,3 +15,44 @@ footer > div {
     list-style: none;
     font-size: 1rem;
 }
+
+.footer > div > ul > li > img {
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .footer-list{
+        display: none;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    footer > div {
+        margin-top: 0;    
+    }
+    .문의, .SNS, .주소 {
+        padding-left: 30px;
+        border-bottom: 1px solid black;
+    }
+    
+    .footer > div > ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer > div > ul {
+        margin: 11px 0;
+    }
+    
+
+    .footer > div > ul > li > img {
+        display: block;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .show {
+        display: flex;
+    }
+}
