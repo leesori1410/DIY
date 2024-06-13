@@ -121,10 +121,6 @@ a {
     .nav-list {
         display: none;
     }
-    /* header:hover + .nav-spread, 
-    .nav-spread:hover {
-        display: none;
-    } */
     .nav-toggle {
         display: flex;
     }
