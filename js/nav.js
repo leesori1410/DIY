@@ -1,3 +1,18 @@
+const navSpread = () => {
+    const navListUl = document.getElementsByClassName("nav-list")[0];
+    const navSpreadDiv = document.getElementsByClassName("nav-spread")[0];
+
+    // 마우스 가져다 댔을 때
+    navListUl.onmouseover = () => {
+        navSpreadDiv.classList.toggle("nav-spread-show");
+        }
+    // 마우스 뗐을 때
+    navListUl.onmouseout = () => {
+        navSpreadDiv.classList.toggle("nav-spread-show");
+    }
+}
+navSpread();
+
 const toggleMenu = () => {
     // HTML 요소 -> js
     const navToggleDiv = document.getElementsByClassName("nav-toggle")[0]; // .nav-toggle 가져오자 
