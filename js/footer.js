@@ -1,39 +1,36 @@
-// footer.js 파일 내용
-const toggleMenu = () => {
-    const footerToggleDiv = document.querySelector(".toggle-img img");
-    const footerListUl = document.querySelector(".footer-box");
+const footerToggleMenu = () => {
 
-    footerToggleDiv.onclick = () => {
-        footerListUl.classList.toggle("show-menu");
-        footerListUl.classList.toggle("show-mobile");
+    const footerToggleDiv0 = document.getElementsByClassName("footer-box")[0];
+    const toggleI0 = footerToggleDiv0.getElementsByClassName("bi")[0];
+    const footerExplainUl0 = footerToggleDiv0.getElementsByClassName("explain")[0];
+
+    const footerToggleDiv1 = document.getElementsByClassName("footer-box")[1];
+    const toggleI1 = footerToggleDiv1.getElementsByClassName("bi")[0];
+    const footerExplainUl1 = footerToggleDiv1.getElementsByClassName("explain")[0];
+
+    const footerToggleDiv2 = document.getElementsByClassName("footer-box")[2];
+    const toggleI2 = footerToggleDiv2.getElementsByClassName("bi")[0];
+    const footerExplainUl2 = footerToggleDiv2.getElementsByClassName("explain")[0];
+
+    toggleI0.onclick = () => {
+        toggleI0.classList.toggle("bi-plus-lg");
+        toggleI0.classList.toggle("bi-dash-lg");
+
+        footerExplainUl0.classList.toggle("show");
     }
-}
-toggleMenu();
 
-const toggleItems = () => {
-    // 문의
-    const footercontainerDiv0 = document.querySelectorAll(".explain")[0];
-    const mobileItem0 = document.querySelectorAll(".toggle-img")[0];
-    
-    // SNS
-    const footercontainerDiv1 = document.querySelectorAll(".explain")[1];
-    const mobileItem1 = document.querySelectorAll(".toggle-img")[1];
-        
-    // 주소
-    const footercontainerDiv2 = document.querySelectorAll(".explain")[2];
-    const mobileItem2 = document.querySelectorAll(".toggle-img")[2];
-    
-    mobileItem0.onclick = () => {
-        footercontainerDiv0.classList.toggle("show-mobile");
+    toggleI1.onclick = () => {
+        toggleI1.classList.toggle("bi-plus-lg");
+        toggleI1.classList.toggle("bi-dash-lg");
+
+        footerExplainUl1.classList.toggle("show");
     }
-    mobileItem1.onclick = () => {
-        footercontainerDiv1.classList.toggle("show-mobile");
+
+    toggleI2.onclick = () => {
+        toggleI2.classList.toggle("bi-plus-lg");
+        toggleI2.classList.toggle("bi-dash-lg");
+
+        footerExplainUl2.classList.toggle("show");
     }
-    mobileItem2.onclick = () => {
-        footercontainerDiv2.classList.toggle("show-mobile");
-    }
-}
-toggleItems();
-
-
-
+};
+footerToggleMenu();

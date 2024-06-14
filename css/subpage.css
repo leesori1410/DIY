@@ -16,7 +16,7 @@
     background-color: #D9D9D9;
 }
 
-.text {
+.text-1 {
     padding-left: 14px;
     padding-top: 20px;
     font-size: 18px;
@@ -38,7 +38,7 @@
    font-size: 20px;
    margin: 0 auto;
    max-width: 52rem;
-   margin-bottom: 4rem;
+   margin-bottom: 6rem;
    margin-top: 2rem;
 }
 
