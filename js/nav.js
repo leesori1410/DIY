@@ -9,11 +9,10 @@ const navSpread = () => {
     // 마우스 뗐을 때
     navListUl.onclick = () => {
         navSpreadDiv.classList.toggle("nav-spread-show");
+        navSpreadDiv.classList.toggle("nav-spread");
     }
 
-    setTimeout(() => {
-       
-    }, 5000);
+    
     
 }
 navSpread();
