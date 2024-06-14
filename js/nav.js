@@ -3,13 +3,18 @@ const navSpread = () => {
     const navSpreadDiv = document.getElementsByClassName("nav-spread")[0];
 
     // 마우스 가져다 댔을 때
-    navListUl.onmouseover = () => {
+    navListUl.onclick  = () => {
         navSpreadDiv.classList.toggle("nav-spread-show");
         }
     // 마우스 뗐을 때
-    navListUl.onmouseout = () => {
+    navListUl.onclick = () => {
         navSpreadDiv.classList.toggle("nav-spread-show");
     }
+
+    setTimeout(() => {
+       
+    }, 5000);
+    
 }
 navSpread();
 
