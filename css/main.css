@@ -34,3 +34,21 @@
     display: block;
     
 }
+
+@media screen and (max-width:700px) {
+    .scene.one {
+        width: 100%;
+        background-size:cover;
+        background-position:50%;
+    }
+    .scene.two {
+        width: 100%;
+        background-size:cover;
+        background-position:50%;
+    }
+    .scene.three {
+        width: 100%;
+        background-size:cover;
+        background-position:50%;
+    }
+}
