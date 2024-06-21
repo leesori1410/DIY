@@ -166,6 +166,91 @@
         "hashtag2": "#애견목걸이",
         "category": "목걸이",
         "image": "카드캡터 알파벳 목걸이.png"
+    },
+    {
+        "name": "강아지 바나나 쿠키",
+        "hashtag": "#바나나 #맛좋은",
+        "hashtag2": "#강아지_쿠키",
+        "category": "쿠키",
+        "image": "강아지 바나나 쿠키.png"
+    },
+    {
+        "name": "프리미엄 수제 쿠키",
+        "hashtag": "#특식 #건강간식",
+        "hashtag2": "#곰돌이_쿠키",
+        "category": "쿠키",
+        "image": "프리미엄 수제 쿠키.png"
+    },
+    {
+        "name": "강아지 고구마 쿠키",
+        "hashtag": "#고구마 #스윗한",
+        "hashtag2": "#수제쿠키",
+        "category": "쿠키",
+        "image": "강아지 고구마 쿠키.png"
+    },
+    {
+        "name": "강아지 스쿱쿠키",
+        "hashtag": "#알록달록 #스쿱쿠키",
+        "hashtag2": "#천연색소 #비주얼깡패",
+        "category": "쿠키",
+        "image": "강아지 스쿱쿠키.png"
+    },
+    {
+        "name": "강아지 단호박 쿠키",
+        "hashtag": "#단호박_쿠키 #영양듬뿍",
+        "hashtag2": "#저알러지간식",
+        "category": "쿠키",
+        "image": "강아지 단호박 쿠키.png"
+    },
+    {
+        "name": "강아지 촉촉한 붕어빵",
+        "hashtag": "#애견간식 #고단백",
+        "hashtag2": "#겨울날_선물",
+        "category": "쿠키",
+        "image": "강아지 촉촉한 붕어빵.png"
+    },
+    {
+        "name": "수제 우유 개껌",
+        "hashtag": "#간단한 #건조기",
+        "hashtag2": "#정성_가득_우유개껌",
+        "category": "개껌",
+        "image": "수제 우유 개껌.png"
+    },
+    {
+        "name": "수제간식 개껌",
+        "hashtag": "#수제간식",
+        "hashtag2": "#홈메이드 #영양간식",
+        "category": "개껌",
+        "image": "수제간식 개껌.png"
+    },
+    {
+        "name": "고구마 우유 개껌",
+        "hashtag": "#고구마_우유",
+        "hashtag2": "#개껌_만들기 #반려견간식",
+        "category": "개껌",
+        "image": "고구마 우유 개껌.png"
+    },
+    {
+        "name": "당근 우유 개껌",
+        "hashtag": "#이갈이 #대용량",
+        "hashtag2": "#당근&우유_개껌",
+        "category": "개껌",
+        "image": "당근 우유 개껌.png"
+    },
+    {
+        "name": "강아지 닭가슴살 개껌",
+        "hashtag": "#치킨맛 #닭가슴살",
+        "hashtag2": "#강아지개껌",
+        "category": "개껌",
+        "image": "강아지 닭가슴살 개껌.png"
+    },
+    {
+        "name": "칠면조 힘줄 개껌",
+        "hashtag": "#양치껌 #구강관리",
+        "hashtag2": "#칠면조_힘줄",
+        "category": "개껌",
+        "image": "칠면조 힘줄 개껌.png"
     }
+
 
 ]
