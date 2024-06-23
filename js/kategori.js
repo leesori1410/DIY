@@ -3,10 +3,13 @@ let allData;
 // 데이터 보여주기
 const showData = (data) => {
     const DivContainerSection = document.getElementsByClassName("goods-container")[0];
+    const category = document.getElementsByClassName("category")[0];
+    const categoryName = category.innerText;
+    // console.log(categoryName);
 
     let DivString = ""; // 'let' 추가
     data.forEach((element) => {
-        if(element["category"]==="당근케이크"){
+        if(element["category"]===categoryName){
             DivString += `<div class="goods">
                     <img src="../image/${element.image}" alt="${element.name}" class="goods-img">
                     <div class="name">${element.name}</div>
