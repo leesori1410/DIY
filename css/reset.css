@@ -20,3 +20,13 @@ img {
     max-width: 100%;
     /* 자기 크기 유지하다가 창이 더 작아지면 창 크기만해짐 */
 }
+
+button {
+    background: inherit;
+    border:none;
+    box-shadow:none; 
+    border-radius:0; 
+    padding:0; 
+    overflow:visible; 
+    cursor:pointer;
+}
