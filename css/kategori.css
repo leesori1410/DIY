@@ -33,8 +33,8 @@
 .goods-container {
     /* 그리드 사용 */
     display: grid;
-    /* 세로 트랙 3번씩 30% */
-    grid-template-columns: repeat(3, 30%);
+    /* 그리드 열의 배치 3번씩(반복) 30% */
+    grid-template-columns: repeat(3, 33.33%);
     /* 그리드 사이 간격주기 */
     grid-gap: 30px;
     /* 가로 간격 */
