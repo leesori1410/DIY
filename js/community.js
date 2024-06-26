@@ -17,8 +17,9 @@ function setData(title, img, writing) {
             </div>\n`;
     focusDiv.classList.toggle("focus-show");
     const toggleI = focusDiv.getElementsByTagName("i")[0];
-    console.log(toggleI);
+    // console.log(toggleI);
     toggleI.onclick = () => {
         focusDiv.classList.toggle("focus-show");
+        focusDiv.classList.toggle("blur");
     }
 }
