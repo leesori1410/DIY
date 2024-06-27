@@ -202,9 +202,6 @@ main {
     font-size: 1rem;
     margin-bottom: 20px;
 }
-.focus-show {
-    display: flex;
-}
 .focus-close {
     display: none;
 }
@@ -227,7 +224,7 @@ main {
     width: 400px;
     height: 500px;
     background-color: rgb(255, 241, 168);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: 30px 50px;
     align-items: center;
@@ -237,6 +234,7 @@ main {
     z-index: 30;
     top: 60px;
     right: calc((100% - 400px) / 2);
+    display: none;
 }
 .in > div {
     background-color: white;
@@ -272,6 +270,9 @@ input {
 }
 .bi-plus-circle-dotted {
     font-size: 25px;
+}
+.focus-show {
+    display: flex;
 }
 
 @media screen and (max-Width:990px) {
