@@ -6,7 +6,7 @@ const toggleMenu = () => {
     const toggleI = navToggleDiv.getElementsByTagName("i")[0]; 
 
     navToggleDiv.onclick = () => {
-        navListUl.classList.toggle("show");
+        navListUl.classList.toggle("nav-show");
 
         toggleI.classList.toggle("bi-lsit");
         toggleI.classList.toggle("bi-x-lg");
@@ -37,7 +37,7 @@ const DIYtoggle  = () => {
     toggleI.onclick = () => {
         toggleI.classList.toggle("bi-caret-down-fill");
         toggleI.classList.toggle("bi-caret-down");
-        DIYUl.classList.toggle("show");
+        DIYUl.classList.toggle("nav-show");
     }
 }
 DIYtoggle();
