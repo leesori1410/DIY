@@ -49,7 +49,11 @@ a {
     font-size: 20px;
 }
 .DIY {
+    width: 100%;
     display: none;
+    padding: 0;
+    flex-direction: column;
+    padding-left: 30px;
 }
 .DIY-list {
     position: absolute;
@@ -71,7 +75,7 @@ a {
 }
 .nav-DIY {
     width: 100%;
-    padding-right: 7px;
+    padding-right: 13px;
     display: flex;
     justify-content: space-between;
 }
@@ -156,7 +160,7 @@ input {
         font-size: 18px;
         margin-top: 3px;
     }
-    .DIY {
+    .nav-DIY > .DIY {
         width: 100%;
         display: none;
         flex-direction: column;
@@ -167,10 +171,10 @@ input {
         margin-bottom: 6px;
         padding: 0;
     }
-    .show {
+    .nav-show {
         display: flex;
-    }
-    .hidden {
-        display: none;
+        /* flex-direction: column;
+        padding: 0;
+        right: 0; */
     }
 }
