@@ -60,6 +60,7 @@
     .section-subpage > img {
         max-width: 100%; /* 이미지는 부모 요소의 최대 너비에 맞게 조정됩니다. */
         margin-bottom: 1rem;
+        padding-right: 0;
     }
     
     
