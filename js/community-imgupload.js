@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="writing post-item">${entry.text}</p>
         `;
         // 일기 컨테이너에 추가
-        diaryContainer.insertBefore(diaryItem, diaryContainer.firstChild);
+        diaryContainer.insertBefore(diaryItem, diaryContainer.lastChild);
     }
 
     // 입력 폼 초기화 함수
