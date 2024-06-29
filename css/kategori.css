@@ -22,12 +22,20 @@
     
 }
 
-.goods-name1 {
-    margin-right: 150px;
+span {
     background-color: #e8e6e6;
 }
 
-.goods-name2 {
+.goods-name1 {
+    margin-right: 150px;
+    
+}
+
+.goods-name1:hover {
+    background-color: rgb(255, 235, 140);
+}
+
+.goods-name2:hover {
     background-color: rgb(255, 235, 140);
 }
 
