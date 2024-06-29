@@ -100,5 +100,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 페이지 로드 시 일기 항목 불러오기
     loadDiaryEntries();
-    window.localStorage.clear();
 });
