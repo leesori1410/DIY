@@ -6,11 +6,11 @@ const showData = (data) => {
 
     let DivString = ""; // 'let' 추가
     data.forEach((element) => {
-        DivString += `<div class="goods">
+        DivString += `<div class="goods"><a href="${element.name}.html">
                 <img src="../image/${element.image}" alt="${element.name}" class="goods-img">
                 <div class="name">${element.name}</div>
                 <div class="hashtags">${element.hashtag}<br>${element.hashtag2}</div>
-            </div>\n`; // 누적 및 줄바꿈 추가
+            </a></div>\n`; // 누적 및 줄바꿈 추가
     });
         
     DivContainerSection.innerHTML = DivString; // HTML 문자열을 container에 할당
