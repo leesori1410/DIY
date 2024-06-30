@@ -1,5 +1,6 @@
 [submodule "DIY"]
     path = DIY
     url = https://github.com/leesori1410/DIY.git
+    branch = main
 
 
