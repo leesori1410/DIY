@@ -1,0 +1,344 @@
+main {
+    margin-top: 45px;
+}
+
+.best {
+    margin: 85px 0 20px 40px;
+}
+
+.section > div{
+    overflow: hidden;
+}
+
+.section input[id*="slide"] {
+    display:none;
+}
+
+/* 블럭요소 가운데 정렬 및, 화면 1200으로 지정 */
+.section .slidwrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 영역이 넘어갔을 시 안보이는 가리는 것*/
+    overflow: hidden;
+}
+/* ul에 준 slidelist를 선택*/
+.section .slidelist {
+    /* 안쪽 인라인 요소들의 줄바꿈을 없애게 하는 속성을 줌 */
+    white-space: nowrap;
+    /* 안쪽 빈 여백  없애기*/
+    font-size: 0;
+    position: relative;
+}
+
+.section .slidelist > li {
+    /* 세로정렬을 가운데로  가로를 부모요소를 가득 채우게 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    /* 자연스러운 애니메이션을 위해 전체옵션, 5초로*/
+    transition: all .5s;
+}
+
+.section .slidelist > li > a {
+    /* 안쪽 컨텐츠 다 담을 수 있게 */
+    display: block;
+    /* 버튼으로 사용할 label 태그를 자율배치 시킬건데 기준점을 잡기위해 */
+    position: relative;
+}
+
+.section .slidelist > li > a img {
+    /* 가로 100% 반응형으로 사용할 수 있다.*/
+    width: 100%;
+    height: 450px;
+}
+
+.section .slide-control label{
+    /* 자율배치 */
+    position: absolute;
+    /* 우선순위는 10, 위쪽으로 50 */
+    z-index: 1;
+    top: 50%;
+    /* 자신을 기준으로 높이의 반만큼 위쪽으로 당기는 값을 줘서 세로 중앙배치 */
+    transform:translateY(-50%);
+    /* 클릭할 수 있는 크기를 줌 */
+    padding: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.section .slidelist .left {
+    /* 왼쪽 기준 30, 화살표 이미지 삽입 */
+    left: 30px;
+    /* background: url(left.png) center center / 100% no-repeat; */
+}
+
+.section .slidelist .right {
+    /* 오른쪽 기준 30, 화살표 이미지 삽입 */
+    right: 30px;
+    /* background: url(right.png) center center / 100% no-repeat; */
+}
+/* 체크가 되면 li의 대해 스타일을 부여, 자신을 기준으로 x = 0; 이 값으로 첫번째가 체크가 되면 보여지게 된다. */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+/* 두번째가 체크가 되면 x가 -100% 당겨진다. 두번째 li가 보여지게 된다. */
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+/* 세번째가 체크가 되면 x가 -200% 당겨진다. 세번째 li가 보여지게 된다. */
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+.section .slide-control [class*="control"] {display: none;}
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+
+
+main {
+    height: 1400px;
+}
+.community {
+    display: flex;
+    /* margin: 60px 0; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 1210px;
+    height: 500px;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr); /* 3개의 동일한 너비의 열로 설정 */
+    column-gap: 0;
+    height: 1210px;
+}
+
+/* 등차수열 */
+.post-container > article:nth-child(6n+2) {
+    margin-top: 80px;
+    margin-left: -80px;
+}
+.post-container > article:nth-child(6n+5) {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.post > .title {
+    padding: 4px 0 0 15px;
+    visibility: hidden;
+    font-size: 14px;
+}
+
+.post-img {
+    width: 280px;
+    height: 170px;
+    border-radius: 20px;
+}
+
+.writing {
+    visibility: hidden;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 8px 0 0 6px;
+    width: 280px;
+    height: 120px;
+}
+
+.post:hover {
+    background-color: wheat;
+    z-index: 10;
+    .title , .writing {
+        visibility: visible;
+        display: flex;
+    }
+}
+
+.focus {
+    width: 100%;
+    height: 1210px;
+    padding-top: 50px;
+    display: none;
+    position: absolute;
+    z-index: 50;
+    justify-content: center;
+    backdrop-filter: blur(4px); /* 배경 흐리게 */
+}
+.blur {
+    backdrop-filter: blur(4px);
+}
+.focus-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 30px 40px 0 40px ;
+    height: 800px;
+}
+.focus-title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.focus-title > i {
+    font-size: 18px;
+    font-weight: 5px;
+    color: rgb(255, 235, 140);
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    padding: 4px 3px 6px 6px;
+    border-radius: 15px;
+}
+.focus-img {
+    margin: 15px 0;
+}
+.focus-writing {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.focus-close {
+    display: none;
+}
+
+.plus {
+    position: fixed;
+    z-index: 1000;
+    top: calc(100% - 100px);
+    left: calc(100% - 80px);
+}
+.plus > i {
+    font-size: 35px;
+    color: rgb(255, 235, 140);
+    background-color: white;
+    border-radius: 50px;
+    padding: 4px 5px;
+}
+
+.in {
+    margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 241, 168);
+    /* display: flex; */
+    flex-direction: column;
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 30;
+    top: 60px;
+    right: calc((100% - 400px) / 2);
+    display: none;
+}
+.in > div {
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    margin: 5px;
+    border-radius: 30px;
+}
+input {
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+textarea {
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.in > button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: -10px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color:rgb(255, 235, 140)
+}
+#ti, #ti > input {
+    height: 40px;
+}
+
+
+#im {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+#im > label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bi-plus-circle-dotted {
+    font-size: 25px;
+}
+.focus-show {
+    display: flex;
+}
+
+@media screen and (max-Width:990px) {
+    main , .focus {
+        height: 2300px;
+    }
+    .focus-container {
+        width: 60%;
+    }
+    .post-container {
+        grid-template-columns: repeat(2, 0.5fr);
+    }
+    .post-container > article:nth-child(6n+2) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .post-container > article:nth-child(6n+5) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .post-container > article:nth-child(even) {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-Width:600px) {
+    main , .focus {
+        height: 3300px;
+    }
+    .focus-container {
+        width: 80%;
+    }
+    .post-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }  
+    .post-container > article:nth-child(even) {
+        margin-top: 0;
+    }
+    .post-item:nth-child(1) {
+        margin: 0;
+        margin-bottom: 6px;
+        order: 2;
+    }
+    .post-item:nth-child(2) {
+        order: 1;
+    }
+    .post-item:nth-child(3) {
+        order: 3;
+    }
+}

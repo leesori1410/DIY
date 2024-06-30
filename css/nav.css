@@ -1,0 +1,180 @@
+.header {
+    margin: 0;
+    width: 100%;
+    height: 44px;
+    border-bottom: 3px solid rgb(255, 235, 140);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+nav {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 25px;
+}
+a {
+    color: #000;
+}
+.nav-logo {
+    height: 31px;
+}
+.nav-list {
+    width: 262px;
+    display: flex;
+    font-size: 1rem;
+    /* justify-content: center;      */
+    gap: 40px;
+    background-color: white;
+    margin-top: 4px;
+}
+.nav-list  a {
+    color: black;
+}
+.nav-item {
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+.nav-toggle {
+    display: none;
+}
+.bi-list {
+    font-size: 20px;
+}
+.DIY {
+    width: 100%;
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.DIY-list {
+    position: absolute;
+    top: -70px;
+    right: 220px;
+    z-index: -101;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: white;
+    border-top: 3px dotted rgb(255, 235, 140);
+    border-right: 3px solid rgb(255, 235, 140);
+    border-bottom: 3px solid rgb(255, 235, 140);
+    border-left: 3px solid rgb(255, 235, 140);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+}
+.nav-DIY {
+    width: 100%;
+    padding-right: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-DIY > i {
+    display: none;
+}
+
+.in {
+    margin-top: 500px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 241, 168);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.in > div {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 30px;
+}
+input {
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+.in > button {
+    width: 100px;
+    height: 40px;
+    /* border: 2px solid white; */
+    border-radius: 15px;
+    padding: 10px;
+    background-color:rgb(255, 235, 140);
+}
+.im {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-toggle > i {
+    font-size: 25px;
+    color: rgb(255, 235, 140);
+}
+.top {
+    top: 42px;
+}
+
+@media screen and (max-width:600px) {
+    .DIY-list {
+        display: none;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-list {
+        width: 120px;
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        position: absolute;
+        top: 38px;
+        right: 0;
+        z-index: 101;
+        background-color: white;
+        padding: 10px;
+        border-top: 3px dotted rgb(255, 235, 140);
+        border-bottom: 3px solid rgb(255, 235, 140);
+        border-left: 3px solid rgb(255, 235, 140);
+        border-bottom-left-radius: 10px;
+    }
+    .nav-DIY > i {
+        display: flex;
+        font-size: 18px;
+        margin-top: 3px;
+    }
+    .nav-DIY > .DIY {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 14px;
+        row-gap: 4px;
+        margin-top: -4px;
+        margin-bottom: 6px;
+        padding: 0;
+    }
+    .nav-show {
+        display: flex;
+        /* flex-direction: column;
+        padding: 0;
+        right: 0; */
+    }
+}
