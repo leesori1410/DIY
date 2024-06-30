@@ -1,0 +1,39 @@
+#section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    border: 2px solid #FFEFD1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 80%;
+    max-width: 800px;
+    height: 60px;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+
+}
+
+#search-bar {
+    font-size: 20px;
+    font-weight: bold;
+    background: none;   
+    border: none;      
+    flex-grow: 1;
+    padding-left: 20px;      
+}
+
+#search-bar:focus {
+    outline: none;      
+}
+    
+.search-container > i {
+    color: #FFD820;
+    font-size: 30px;
+    
+}
